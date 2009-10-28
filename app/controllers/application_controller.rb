@@ -8,7 +8,6 @@ class ApplicationController < ActionController::Base
   layout 'application'
   include AuthenticatedSystem
 
-
   #before_filter :login_required
   
   # Scrub sensitive parameters from your log
