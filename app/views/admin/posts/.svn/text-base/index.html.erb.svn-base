@@ -1,0 +1,25 @@
+<div class="posts">
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Title</th>
+				<th>Category</th>
+				<th>Created at</th>
+				<th colspan="2"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% for post in @posts %>
+				<tr>
+					<td><%= post.id %></td>
+					<td><%= link_to post.title, admin_post_path(post) %></td>
+					<td><%= post.category.name rescue "Other" %></td>
+					<td><%= post.created_at %></td>
+					<td><%= link_to 'edit', edit_admin_post_path(post) %></td>
+					<td><%= link_to 'destroy', admin_post_path(post), :method => :delete, :confirm => 'Are you sure?' %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

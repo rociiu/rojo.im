@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Rojo V0.1</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" href="/stylesheets/reset.css" type="text/css" />
+		<link rel="stylesheet" href="/stylesheets/admin.css" type="text/css" />
+		<link rel="stylesheet" href="/stylesheets/coderay.css" type="text/css" />
+	</head>
+	<body>
+		<div id="admin">
+			<div id="head">
+				<div class="inner">
+					<h2>Rojo Admin Console</h2>
+					<% if current_user %>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="/admin/posts">Posts</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Contacts</a></li>
+						<li><a href="/admin/logout">Logout</a></li>
+					</ul>
+					<% end %>
+				</div>
+			</div>
+			<div id="content">
+				<div class="inner">
+					<%= yield %>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

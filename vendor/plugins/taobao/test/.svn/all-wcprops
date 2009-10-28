@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/rojo_v1/!svn/ver/1/vendor/plugins/taobao/test
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rojo_v1/!svn/ver/1/vendor/plugins/taobao/test/test_helper.rb
+END
+taobao_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rojo_v1/!svn/ver/1/vendor/plugins/taobao/test/taobao_test.rb
+END

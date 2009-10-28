@@ -1,0 +1,21 @@
+<div class="posts">
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Title</th>
+				<th colspan="2"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% for category in @categories %>
+				<tr>
+					<td><%= category.id %></td>
+					<td><%= link_to category.name %></td>
+					<td><%= link_to 'edit', edit_admin_category_path(category) %></td>
+					<td><%= link_to 'destroy', admin_category_path(category), :method => :delete, :confirm => 'Are you sure?' %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/rojo_v1/!svn/ver/1/app/views/home
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/rojo_v1/!svn/ver/1/app/views/home/index.html.erb
+END
+projects.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/rojo_v1/!svn/ver/2/app/views/home/projects.html.erb
+END
+about.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/rojo_v1/!svn/ver/1/app/views/home/about.html.erb
+END
+contact.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rojo_v1/!svn/ver/2/app/views/home/contact.html.erb
+END
+portfolio.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rojo_v1/!svn/ver/1/app/views/home/portfolio.html.erb
+END

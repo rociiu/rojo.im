@@ -1,0 +1,8 @@
+
+<div id="posts">
+	<ul>
+		<% for post in @posts %>
+		<li><%=  post.title %> <%= link_to 'edit', edit_admin_post_path(post) %></li>
+		<% end %>
+	</ul>
+</div>

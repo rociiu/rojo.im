@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/rojo_v1/!svn/ver/1/config
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/rojo_v1/!svn/ver/2/config/routes.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/rojo_v1/!svn/ver/1/config/database.yml
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/rojo_v1/!svn/ver/1/config/boot.rb
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/rojo_v1/!svn/ver/1/config/environment.rb
+END

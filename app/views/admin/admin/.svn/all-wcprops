@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/rojo_v1/!svn/ver/1/app/views/admin/admin
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rojo_v1/!svn/ver/1/app/views/admin/admin/index.html.erb
+END
+login.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rojo_v1/!svn/ver/1/app/views/admin/admin/login.html.erb
+END

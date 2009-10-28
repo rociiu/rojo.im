@@ -1,0 +1,11 @@
+<div class="field">
+	<span>Who are you?(email or nickname) </span>
+    <%= form.text_field :customer, :class => "i1 text" %>
+</div>
+
+<div class="field">
+  <%= form.text_area :content, :cols => "35", :rows => "5", :class => "t1 text" %>
+</div>
+<div class="field">
+	<%= submit_tag "Post", :class => 'button' %>	
+</div>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/rojo_v1/!svn/ver/1/test/unit
+END
+user_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/rojo_v1/!svn/ver/1/test/unit/user_test.rb
+END
+category_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/rojo_v1/!svn/ver/1/test/unit/category_test.rb
+END

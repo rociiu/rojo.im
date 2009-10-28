@@ -1,0 +1,45 @@
+
+<div id="post" class="clearfix">
+	<% form_for(@post, :url => admin_post_path(@post)) do |f| %>
+		<%= f.error_messages %>
+		<ul>
+			<li>
+				<label>Title</label>
+				<%= f.text_field :title %>
+			</li>
+			<li>
+				<label>Category</label>
+				<%= f.select :category_id, select_categories %>
+			</li>
+			<li>
+				<label>Content</label>
+				<%= f.text_area :content, :cols => '90', :row => '35' %>
+			</li>
+			<li>
+				<label>Draft</label>
+				<input type="checkbox"></input>
+			</li>
+			<li>
+				<%= f.submit 'Update' %>
+				<input type="submit" value="Preview"></input>
+			</li>
+		</ul>
+	<% end %>
+	<div id="redcloth_tips">
+		<ul>
+			<li>
+				<span>h1.This will be a h1 tag</span>
+			</li>
+			<li>
+				<span>*xx* for bold</span>
+			</li>
+			<li>
+				<span>* item</span>
+				<span># order list</span>
+			</li>
+			<li>
+				<span>'link':url <a href="#">link</a></span>
+			</li>
+		</ul>
+	</div>
+</div>

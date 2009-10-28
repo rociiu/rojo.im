@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/rojo_v1/!svn/ver/1/app/views/comments
+END
+_recent.erb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/rojo_v1/!svn/ver/1/app/views/comments/_recent.erb
+END
+_comment.erb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rojo_v1/!svn/ver/1/app/views/comments/_comment.erb
+END
+_form.erb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/rojo_v1/!svn/ver/1/app/views/comments/_form.erb
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/rojo_v1/!svn/ver/1/app/controllers/admin
+END
+contacts_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rojo_v1/!svn/ver/1/app/controllers/admin/contacts_controller.rb
+END
+categories_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/rojo_v1/!svn/ver/1/app/controllers/admin/categories_controller.rb
+END
+admin_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rojo_v1/!svn/ver/1/app/controllers/admin/admin_controller.rb
+END
+posts_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rojo_v1/!svn/ver/1/app/controllers/admin/posts_controller.rb
+END

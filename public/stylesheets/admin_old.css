@@ -1,0 +1,26 @@
+ul#menu {
+	margin: 20px 0;
+}
+ul#menu li {
+	display: inline;
+}
+ul#menu li a {
+	padding: 7px 10px;
+}
+table {
+	width: 100%;
+}
+table thead tr {
+	border-bottom: 1px solid #eee;
+}
+table tr th {
+	text-align: left;
+	padding: 5px 0;
+}
+table tbody tr td {
+	padding: 10px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+form label {
+	display: block;
+}

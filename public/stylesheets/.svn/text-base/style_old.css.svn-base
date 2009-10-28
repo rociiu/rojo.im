@@ -1,0 +1,219 @@
+body {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	background: url(/images/bg.png);
+	font-size: 87.5%;
+	color: #333;
+}
+.text {
+	border: 1px solid #eee;
+	padding: 5px 10px;
+	font-size: 1.1em;
+	color: #333;
+}
+.button {
+	border: 1px solid #eee;
+	background: #666;
+	color: white;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.field {
+	margin: 10px 0;
+}
+#header {
+	height: 70px;
+	width: 650px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	position: relative;
+}
+#header h1 {
+	text-indent: -1000px;
+	background: url(/images/nn_h.png) no-repeat;
+	height: 75px;
+}
+#header ul.nav {
+	list-style: non;
+	position: absolute;
+	right: 10px;
+	top: 30px;
+}
+#header ul.nav li {
+	display: inline;
+	margin-left: 10px;
+}
+#header ul.nav li a {
+	text-decoration: none;
+	color: #5c4f46;
+	padding: 4px 5px;
+}
+
+#header ul.nav li a.selected, #header ul.nav li a:hover {
+	background: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#header ul.nav li a:hover {
+	background: #ccc;
+	color: white;
+}
+#header ul.nav li a.selected:hover {
+	background: #fff;
+	color: #5c4f46;
+}
+
+/*
+#header {
+	background: url(/images/head_bg.png);
+	height: 145px;
+}
+#header .inner {
+	margin: 0 auto;
+	width: 860px;
+	position: relative;
+}
+#header h1 {
+	background: url(/images/logo.png) center no-repeat;
+	width:  500px;
+	height: 100px;
+	text-indent: -1000px;
+	margin-bottom: 0;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#header p {
+	text-shadow: #fff 0 1px 1px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #3d3737;
+	margin-bottom: 0;
+	position: absolute;
+	top: 95px;
+	left: 380px;
+}
+*/
+#content {
+	width: 650px;
+	margin: 0 auto;
+}
+#intro {
+	height: 150px;
+	margin: 30px 0px;
+	padding-left: 220px;
+	background: url(/images/dango.png) no-repeat left center;
+}
+#intro p {
+	padding-top: 5px;
+	font-size: 18px;
+	color: #555;
+	line-height: 30px;
+	text-shadow: #fff 0 1px 1px;
+}
+#tools, #who {
+	margin: 10px 15px;
+	width: 600px;
+}
+#tools h3, #who h3, #contact h3 {
+	text-shadow: #fff 0px 1px 1px;
+	color: #888;
+	font-family: Helvetica,Arial,Verdana,sans-serif;
+}
+#tools .tool {
+	width: 180px;
+	height: 180px;
+	background: url(/images/tool_bg.png) center no-repeat;
+	float: left;
+	margin: 0 30px;
+}
+#who .member {
+	width: 250px;
+	height: 200px;
+	background: url(/images/m_bg.png) center no-repeat;
+	float: left;
+	margin-right: 50px;
+}
+#who .member .inner_m {
+	padding: 20px 20px 0 20px;
+}
+#who .member:hover {
+	-webkit-transform: rotate(1deg) skew(0deg, 0deg);
+	-moz-transform: rotate(1deg) scale(0, 0);
+    transform: rotate(1deg) scale(0, 0);
+}
+span.name {
+	font-weight: bold;
+	color: #888;
+	border-bottom: 1px solid #ccc;
+}
+p.role {
+	margin: 10px 0;
+	color: #888;
+}
+p.role span.tag {
+	margin: 0px 10px 0 0;
+	color: #888;
+	border-bottom: 1px solid #eee;
+}
+#who .member .inner_m p.twitter {
+	margin-top: 25px;
+}
+p.twitter, p.gmail {
+	margin-bottom: 10px;
+}
+p.twitter span.twitter, p.gmail span.gmail {
+	color: #666;
+}
+p.twitter a, p.gmail a{
+	color: #888;
+	margin-left: 5px;
+}
+#who .member2 {
+	float: right;
+	margin-right: 0px;
+}
+#contact {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#contact h3 {
+	margin-bottom: 10px;
+}
+#contact span.email {
+	color: #999;
+	margin-left: 10px;
+}
+#contact a {
+	color: #888;
+	margin-left: 7px;
+}
+#footer {
+	width: 640px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+	color: #888;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/rojo_v1/!svn/ver/1/test/functional
+END
+users_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rojo_v1/!svn/ver/1/test/functional/users_controller_test.rb
+END
+sessions_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/rojo_v1/!svn/ver/1/test/functional/sessions_controller_test.rb
+END

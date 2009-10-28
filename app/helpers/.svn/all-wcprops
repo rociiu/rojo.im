@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/rojo_v1/!svn/ver/1/app/helpers
+END
+users_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/rojo_v1/!svn/ver/1/app/helpers/users_helper.rb
+END
+application_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rojo_v1/!svn/ver/1/app/helpers/application_helper.rb
+END
+sessions_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/rojo_v1/!svn/ver/1/app/helpers/sessions_helper.rb
+END

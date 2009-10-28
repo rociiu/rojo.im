@@ -1,0 +1,6 @@
+<% if current_user %>
+<ul class="actions">
+    <li><%= link_to "Edit", edit_post_path(actions) %></li>
+    <li><%= link_to "Delete", post_path(actions), :method => :delete %></li>
+</ul>
+<% end %>

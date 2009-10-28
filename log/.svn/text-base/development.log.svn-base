@@ -1,0 +1,1942 @@
+# Logfile created on Sun Aug 09 20:42:20 +0800 2009  [4;36;1mSQL (142.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (8.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-09 20:42:30) [GET]
+Rendering template within layouts/home
+Rendering home/index
+Completed in 98ms (View: 96, DB: 151) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#portfolio (for 127.0.0.1 at 2009-08-09 20:42:32) [GET]
+Rendering template within layouts/home
+Rendering home/portfolio
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://127.0.0.1/portfolio]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#about (for 127.0.0.1 at 2009-08-09 20:42:33) [GET]
+Rendering template within layouts/home
+Rendering home/about
+Completed in 295ms (View: 293, DB: 0) | 200 OK [http://127.0.0.1/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-08-09 20:42:35) [GET]
+  [4;36;1mContact Columns (518.6ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/home
+Rendering home/contact
+Completed in 556ms (View: 17, DB: 519) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#portfolio (for 127.0.0.1 at 2009-08-09 20:42:39) [GET]
+Rendering template within layouts/home
+Rendering home/portfolio
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/portfolio]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-08-09 20:42:40) [GET]
+  [4;35;1mPost Load (90.7ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (1.1ms)
+Completed in 662ms (View: 517, DB: 92) | 200 OK [http://127.0.0.1/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-09 20:42:45) [GET]
+Rendering template within layouts/home
+Rendering home/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-09 20:44:56) [GET]
+Rendering template within layouts/home
+Rendering home/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-08-09 20:44:59) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+
+ActionView::TemplateError (Missing template /post/_recent_posts.erb in view path app/views) on line #57 of app/views/layouts/application.html.erb:
+54: 				</div>
+55: 				<div id="re_posts" class="section">
+56: 					<span class="title">Recent posts</span>
+57: 					<%= render :partial => '/post/recent_posts' %>
+58: 				</div>
+59: 				<div id="networks" class="section">
+60: 					<span class="title">Social Networks</span>
+
+    app/views/layouts/application.html.erb:57
+
+Rendered rescues/_trace (53.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-08-09 20:45:08) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mPost Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+
+ActionView::TemplateError (undefined method `name' for #<Post:0x2507d08>) on line #3 of app/views/posts/_recent_posts.html.erb:
+1: <ul>
+2: 	<% for post in Post.recent %>
+3: 		<li><%= link_to post.name, post_path(post) %></li>
+4: 	<% end %>
+5: </ul>
+
+    app/views/posts/_recent_posts.html.erb:3
+    app/views/posts/_recent_posts.html.erb:2:in `each'
+    app/views/posts/_recent_posts.html.erb:2
+    app/views/layouts/application.html.erb:57
+
+Rendered rescues/_trace (140.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-08-09 20:45:17) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+Rendered posts/_recent_posts (2.1ms)
+Rendered shared/_tracker (0.1ms)
+Completed in 28ms (View: 19, DB: 2) | 200 OK [http://127.0.0.1/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-08-09 20:45:20) [GET]
+  Parameters: {"id"=>"5-testing-"}
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (37.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+Rendered posts/_recent_posts (1.8ms)
+Rendered shared/_tracker (0.1ms)
+Completed in 166ms (View: 27, DB: 39) | 200 OK [http://127.0.0.1/posts/5-testing-]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-08-09 20:46:43) [GET]
+Redirected to http://127.0.0.1:3000/admin/login
+Filter chain halted as [:login_needed] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://127.0.0.1/admin/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AdminController#login (for 127.0.0.1 at 2009-08-09 20:46:43) [GET]
+Rendering template within layouts/admin
+Rendering admin/admin/login
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/admin/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AdminController#login (for 127.0.0.1 at 2009-08-09 20:46:50) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"S8W74mCMMtZbUUTvEYnRVwmkV0m5TBgPvZ3xPSvOlvw=", "login"=>"roc", "password"=>"password4rojo"}
+  [4;36;1mUser Columns (51.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'roc') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/admin/posts
+Completed in 96ms (DB: 52) | 302 Found [http://127.0.0.1/admin/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-08-09 20:46:50) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mPost Load (16.2ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/admin
+Rendering admin/posts/index
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 62ms (View: 30, DB: 20) | 200 OK [http://127.0.0.1/admin/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#new (for 127.0.0.1 at 2009-08-09 20:46:53) [GET]
+  [4;36;1mUser Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mPost Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/admin
+Rendering admin/posts/new
+Completed in 47ms (View: 26, DB: 7) | 200 OK [http://127.0.0.1/admin/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#create (for 127.0.0.1 at 2009-08-09 20:47:50) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"title"=>"create todo app in appengine", "content"=>"@@@\r\n   hello\r\n@@@"}, "authenticity_token"=>"S8W74mCMMtZbUUTvEYnRVwmkV0m5TBgPvZ3xPSvOlvw="}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Create (337.9ms)[0m   [0mINSERT INTO `posts` (`created_at`, `title`, `updated_at`, `content`) VALUES('2009-08-09 12:47:50', 'create todo app in appengine', '2009-08-09 12:47:50', '@@@\r\n hello\r\n@@@')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/posts/6-create-todo-app-in-appengine
+Completed in 361ms (DB: 343) | 302 Found [http://127.0.0.1/admin/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#show (for 127.0.0.1 at 2009-08-09 20:47:50) [GET]
+  Parameters: {"id"=>"6-create-todo-app-in-appengine"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 6) [0m
+Rendering template within layouts/admin
+Rendering admin/posts/show
+Completed in 43ms (View: 26, DB: 4) | 200 OK [http://127.0.0.1/admin/posts/6-create-todo-app-in-appengine]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-08-09 20:47:55) [GET]
+  [4;35;1mPost Load (1.3ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mPost Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+Rendered posts/_recent_posts (2.0ms)
+Rendered shared/_tracker (0.1ms)
+Completed in 46ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#index (for 127.0.0.1 at 2009-08-09 20:48:04) [GET]
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/admin
+Rendering admin/posts/index
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 23ms (View: 6, DB: 5) | 200 OK [http://127.0.0.1/admin/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#edit (for 127.0.0.1 at 2009-08-09 20:48:07) [GET]
+  Parameters: {"id"=>"6-create-todo-app-in-appengine"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (2.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 6) [0m
+Rendering template within layouts/admin
+Rendering admin/posts/edit
+Completed in 102ms (View: 83, DB: 6) | 200 OK [http://127.0.0.1/admin/posts/6-create-todo-app-in-appengine/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#update (for 127.0.0.1 at 2009-08-09 20:48:31) [PUT]
+  Parameters: {"commit"=>"Update", "post"=>{"title"=>"create todo app in appengine", "content"=>"@@@\r\n  from django.conf.urls.defaults import *\r\n\r\n@@@"}, "authenticity_token"=>"S8W74mCMMtZbUUTvEYnRVwmkV0m5TBgPvZ3xPSvOlvw=", "id"=>"6-create-todo-app-in-appengine"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mPost Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 6) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Update (46.2ms)[0m   [0mUPDATE `posts` SET `content` = '@@@\r\n from django.conf.urls.defaults import *\r\n\r\n@@@', `updated_at` = '2009-08-09 12:48:31' WHERE `id` = 6[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/posts/6-create-todo-app-in-appengine
+Completed in 70ms (DB: 53) | 302 Found [http://127.0.0.1/admin/posts/6-create-todo-app-in-appengine]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#show (for 127.0.0.1 at 2009-08-09 20:48:31) [GET]
+  Parameters: {"id"=>"6-create-todo-app-in-appengine"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 6) [0m
+Rendering template within layouts/admin
+Rendering admin/posts/show
+Completed in 20ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/admin/posts/6-create-todo-app-in-appengine]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-08-09 20:48:32) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mPost Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+Rendered posts/_recent_posts (1.5ms)
+Rendered shared/_tracker (0.1ms)
+Completed in 28ms (View: 20, DB: 3) | 200 OK [http://127.0.0.1/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#update (for 127.0.0.1 at 2009-08-09 20:48:41) [PUT]
+  Parameters: {"commit"=>"Update", "post"=>{"title"=>"create todo app in appengine", "content"=>"@@@python\r\n  from django.conf.urls.defaults import *\r\n\r\n@@@"}, "authenticity_token"=>"S8W74mCMMtZbUUTvEYnRVwmkV0m5TBgPvZ3xPSvOlvw=", "id"=>"6-create-todo-app-in-appengine"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mPost Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 6) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Update (0.3ms)[0m   [0mUPDATE `posts` SET `content` = '@@@python\r\n from django.conf.urls.defaults import *\r\n\r\n@@@', `updated_at` = '2009-08-09 12:48:41' WHERE `id` = 6[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/posts/6-create-todo-app-in-appengine
+Completed in 23ms (DB: 7) | 302 Found [http://127.0.0.1/admin/posts/6-create-todo-app-in-appengine]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#show (for 127.0.0.1 at 2009-08-09 20:48:41) [GET]
+  Parameters: {"id"=>"6-create-todo-app-in-appengine"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 6) [0m
+Rendering template within layouts/admin
+Rendering admin/posts/show
+Completed in 19ms (View: 2, DB: 4) | 200 OK [http://127.0.0.1/admin/posts/6-create-todo-app-in-appengine]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-08-09 20:48:43) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mPost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+Rendered posts/_recent_posts (1.6ms)
+Rendered shared/_tracker (0.1ms)
+Completed in 70ms (View: 63, DB: 3) | 200 OK [http://127.0.0.1/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PostsController#edit (for 127.0.0.1 at 2009-08-09 20:49:37) [GET]
+  Parameters: {"id"=>"6-create-todo-app-in-appengine"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mPost Columns (8.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 6) [0m
+Rendering template within layouts/admin
+Rendering admin/posts/edit
+Completed in 30ms (View: 3, DB: 13) | 200 OK [http://127.0.0.1/admin/posts/6-create-todo-app-in-appengine/edit]
+  [4;36;1mSQL (173.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (23.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-08-30 13:46:42) [GET]
+Rendering template within layouts/home
+Rendering home/index
+  [4;36;1mPost Load (442.6ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+  [4;35;1mPost Columns (28.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_recent_posts (735.7ms)
+Completed in 1298ms (View: 825, DB: 668) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-08-30 13:46:48) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (488.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+Rendered posts/_recent_posts (1.7ms)
+Rendered shared/_tracker (220.4ms)
+Completed in 4649ms (View: 4154, DB: 489) | 200 OK [http://127.0.0.1/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-08-30 13:46:56) [GET]
+  Parameters: {"id"=>"6-create-todo-app-in-appengine"}
+  [4;35;1mPost Columns (1674.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (1214.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+Rendered posts/_recent_posts (1.6ms)
+Rendered shared/_tracker (0.1ms)
+Completed in 5553ms (View: 175, DB: 2889) | 200 OK [http://127.0.0.1/posts/6-create-todo-app-in-appengine]
+  [4;36;1mSQL (20.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (102.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090220123422)
+Migrating to CreateComments (20090221133953)
+Migrating to CreateUsers (20090704145214)
+Migrating to CreateSessions (20090704145314)
+Migrating to CreateContacts (20090801151224)
+Migrating to CreateCategories (20090917090048)
+  [4;36;1mSQL (363.7ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090917090048')[0m
+Migrating to AddCategoryToPosts (20090917091723)
+  [4;36;1mSQL (204.5ms)[0m   [0;1mALTER TABLE `posts` ADD `category_id` int(11)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090917091723')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (36.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `comments`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `comments`[0m
+  [4;35;1mSQL (30.3ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mdescribe `contacts`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW KEYS FROM `contacts`[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-18 17:19:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/app.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-18 17:19:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-18 17:20:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-18 17:20:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/app.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:20:55) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM `categories` [0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_recent_posts (58.5ms)
+Rendered shared/_tracker (22.4ms)
+Completed in 226ms (View: 222, DB: 3) | 200 OK [http://127.0.0.1/blog]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:21:42) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/blog]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-18 17:21:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-18 17:21:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/app.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:22:34) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Rendered shared/_tracker (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/blog]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:23:09) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Rendered shared/_tracker (0.1ms)
+Completed in 73ms (View: 71, DB: 0) | 200 OK [http://127.0.0.1/blog]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:23:20) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Rendered shared/_tracker (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/blog]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:23:50) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Rendered shared/_tracker (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/blog]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:25:44) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+ERROR: compiling _run_erb_app47views47blog47index46html46erb RAISED compile error
+/Users/rociiu/sanbox/rojo/app/views/blog/index.html.erb:22: syntax error, unexpected kENSURE, expecting kEND
+/Users/rociiu/sanbox/rojo/app/views/blog/index.html.erb:24: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47blog47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"posts\">\n\t"
+;  for post in @posts ; @output_buffer.concat "\n\t<div class=\"post\">\n\t\t<h2 class=\"title\"><a href=\"#\">"
+
+; @output_buffer.concat(( post.title ).to_s); @output_buffer.concat "</a></h2>\n\t\t<div class=\"detail clearfix\">\n\t\t\t<div class=\"date\">\n\t\t\t\t<span>2009-10-10</span>\n\t\t\t</div>\n\t\t\t<div class=\"categories\">\n\t\t\t\t<label>Categories:</label>\n\t\t\t\t<span>design,rojo,ruby</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"post_content\">\n\t\t\t"
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( post.content ).to_s); @output_buffer.concat "\n\t\t\t<a href=\"#\" class=\"more\">Read More</a>\n\t\t\t\n\t\t</div>\n\t</div>\n\t\n</div>"
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/rociiu/sanbox/rojo/app/views/blog/index.html.erb:24:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/rociiu/sanbox/rojo/app/views/blog/index.html.erb:22: syntax error, unexpected kENSURE, expecting kEND
+/Users/rociiu/sanbox/rojo/app/views/blog/index.html.erb:24: syntax error, unexpected $end, expecting kEND) on line #22 of app/views/blog/index.html.erb:
+19: 	</div>
+20: 	
+21: </div>
+
+    app/views/blog/index.html.erb:24:in `compile!'
+
+Rendered rescues/_trace (45.5ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:25:52) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 82ms (View: 74, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:26:09) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 13ms (View: 6, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:26:43) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 160ms (View: 152, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:30:01) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 25ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:30:37) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:30:42) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 23ms (View: 16, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:30:58) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 26ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-18 17:31:52) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 26ms (View: 19, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-18 17:31:55) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 470ms (View: 381, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-18 17:32:34) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 18ms (View: 5, DB: 2) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-18 17:33:10) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.7ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 24ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 17:27:12) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/app.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 17:27:12) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 17:32:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/app.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 17:32:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 18:48:10) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/app.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 18:48:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-19 18:48:15) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.7ms)
+Completed in 264ms (View: 147, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-19 18:50:13) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 27ms (View: 20, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 18:50:16) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (76.8ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 191ms (View: 15, DB: 79) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 18:50:25) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 21ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-19 18:50:28) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 93ms (View: 85, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 18:50:49) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 18ms (View: 6, DB: 2) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 18:52:09) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.7ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 19ms (View: 6, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 18:52:20) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.8ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 20ms (View: 6, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 18:52:48) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 17ms (View: 6, DB: 2) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 18:53:49) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 24ms (View: 9, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-19 18:53:51) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 24ms (View: 17, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 18:53:52) [GET]
+  [4;36;1mContact Columns (116.2ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/home
+Rendering home/contact
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+  [4;36;1mPost Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_recent_posts (11.0ms)
+Completed in 184ms (View: 61, DB: 118) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 18:54:06) [GET]
+  [4;35;1mContact Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/home
+Rendering home/contact
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_recent_posts (9.8ms)
+Completed in 18ms (View: 10, DB: 4) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 18:54:07) [GET]
+  [4;36;1mContact Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/home
+Rendering home/contact
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+  [4;36;1mPost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_recent_posts (9.5ms)
+Completed in 18ms (View: 10, DB: 4) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 18:54:08) [GET]
+  [4;35;1mContact Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/home
+Rendering home/contact
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC LIMIT 4[0m
+  [4;35;1mPost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_recent_posts (9.5ms)
+Completed in 18ms (View: 10, DB: 4) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 18:54:15) [GET]
+  [4;36;1mContact Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 18:54:21) [GET]
+  [4;35;1mContact Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 18:54:37) [GET]
+
+ActionController::RoutingError (No route matches "/projects" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 18:54:40) [GET]
+  [4;36;1mContact Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-19 18:54:41) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;36;1mPost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 24ms (View: 17, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 18:54:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 18:54:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/app.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-19 18:54:50) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;36;1mPost Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 24ms (View: 17, DB: 2) | 200 OK [http://127.0.0.1/blog]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 18:54:51) [GET]
+  [4;35;1mContact Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:12:12) [GET]
+  [4;36;1mContact Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 35ms (View: 29, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:14:33) [GET]
+  [4;35;1mContact Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:14:40) [GET]
+  [4;36;1mContact Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:15:19) [GET]
+  [4;35;1mContact Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:18:19) [GET]
+  [4;36;1mContact Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:19:11) [GET]
+  [4;35;1mContact Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:19:27) [GET]
+  [4;36;1mContact Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:20:05) [GET]
+  [4;35;1mContact Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 69ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:20:53) [GET]
+  [4;36;1mContact Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:21:41) [GET]
+  [4;35;1mContact Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:21:47) [GET]
+  [4;36;1mContact Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:22:32) [GET]
+  [4;35;1mContact Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:22:41) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "contact"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}}
+  [4;36;1mContact Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (46.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (7.6ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 70ms (View: 3, DB: 56) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:23:21) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "contact"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}}
+  [4;35;1mContact Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 17ms (View: 3, DB: 3) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:38:01) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "contact"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}}
+  [4;36;1mContact Columns (35.1ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 117ms (View: 3, DB: 36) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:38:14) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "contact"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}}
+  [4;35;1mContact Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 15ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:38:47) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "contact"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}}
+  [4;36;1mContact Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 16ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:39:28) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "contact"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}}
+  [4;35;1mContact Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 17ms (View: 3, DB: 4) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:40:14) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "contact"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}}
+  [4;36;1mContact Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 15ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:40:30) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "contact"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}}
+  [4;35;1mContact Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 15ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:40:49) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "contact"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}}
+  [4;36;1mContact Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 15ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:40:56) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "contact"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}}
+  [4;35;1mContact Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 16ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:41:35) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "contact"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}}
+  [4;36;1mContact Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 16ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2009-10-19 19:41:45) [GET]
+  [4;35;1mContact Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Rendering template within layouts/application
+Rendering home/contact
+Rendered shared/_tracker (0.1ms)
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 19:41:49) [GET]
+
+ActionController::RoutingError (No route matches "/projects" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 19:44:20) [GET]
+
+ActionController::RoutingError (No route matches "/projects" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#projects (for 127.0.0.1 at 2009-10-19 19:44:41) [GET]
+Rendering template within layouts/application
+Rendering home/projects
+Rendered shared/_tracker (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#projects (for 127.0.0.1 at 2009-10-19 19:44:52) [GET]
+Rendering template within layouts/application
+Rendering home/projects
+Rendered shared/_tracker (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 20:08:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 20:08:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/app.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2009-10-19 20:18:56) [GET]
+  [4;36;1mPost Load (45.0ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering blog/index
+  [4;35;1mPost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered shared/_tracker (0.1ms)
+Completed in 73ms (View: 20, DB: 47) | 200 OK [http://127.0.0.1/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:18:59) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 18ms (View: 6, DB: 2) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:27:33) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.8ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 26ms (View: 12, DB: 4) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (61.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090220123422)
+Migrating to CreateComments (20090221133953)
+Migrating to CreateUsers (20090704145214)
+Migrating to CreateSessions (20090704145314)
+Migrating to CreateContacts (20090801151224)
+Migrating to CreateCategories (20090917090048)
+Migrating to AddCategoryToPosts (20090917091723)
+Migrating to AddEmailAndUrlToComments (20091019123022)
+  [4;36;1mSQL (564.4ms)[0m   [0;1mALTER TABLE `comments` ADD `email` varchar(255)[0m
+  [4;35;1mSQL (496.2ms)[0m   [0mALTER TABLE `comments` ADD `url` varchar(255)[0m
+  [4;36;1mSQL (123.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091019123022')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (78.7ms)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mdescribe `categories`[0m
+  [4;36;1mSQL (13.5ms)[0m   [0;1mSHOW KEYS FROM `categories`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mdescribe `contacts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `contacts`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (73.4ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (29.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (24.1ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#comment (for 127.0.0.1 at 2009-10-19 20:32:02) [POST]
+  Parameters: {"authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "id"=>"1-hello"}
+
+ActionController::UnknownAction (No action responded to comment. Actions: index and show):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#comment (for 127.0.0.1 at 2009-10-19 20:32:41) [POST]
+  Parameters: {"authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.7ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Redirected to http://127.0.0.1:3000/posts/1-hello
+Completed in 11ms (DB: 3) | 302 Found [http://127.0.0.1/posts/1-hello/comment]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:32:41) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 20ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:33:46) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.6ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 20ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#comment (for 127.0.0.1 at 2009-10-19 20:35:07) [POST]
+  Parameters: {"authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "id"=>"1-hello"}
+  [4;36;1mPost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Redirected to http://127.0.0.1:3000/posts/1-hello
+Completed in 10ms (DB: 2) | 302 Found [http://127.0.0.1/posts/1-hello/comment]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:35:09) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 86ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#comment (for 127.0.0.1 at 2009-10-19 20:35:46) [POST]
+  Parameters: {"authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.7ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Redirected to http://127.0.0.1:3000/posts/1-hello
+Completed in 12ms (DB: 3) | 302 Found [http://127.0.0.1/posts/1-hello/comment]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:35:46) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 19ms (View: 6, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:37:12) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.7ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 25ms (View: 12, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#comment (for 127.0.0.1 at 2009-10-19 20:37:14) [POST]
+  Parameters: {"comment"=>{"name"=>""}, "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "id"=>"1-hello"}
+  [4;36;1mPost Columns (9.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (8.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Redirected to http://127.0.0.1:3000/posts/1-hello
+Completed in 26ms (DB: 18) | 302 Found [http://127.0.0.1/posts/1-hello/comment]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:37:14) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (7.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (11.9ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 36ms (View: 6, DB: 20) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:38:09) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.8ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 87ms (View: 10, DB: 4) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:38:43) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.6ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 24ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:39:25) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.6ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 23ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#comment (for 127.0.0.1 at 2009-10-19 20:39:52) [POST]
+  Parameters: {"comment"=>{"name"=>"", "url"=>"", "content"=>"", "email"=>""}, "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Redirected to http://127.0.0.1:3000/posts/1-hello
+Completed in 10ms (DB: 3) | 302 Found [http://127.0.0.1/posts/1-hello/comment]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:39:52) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 22ms (View: 9, DB: 2) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#comment (for 127.0.0.1 at 2009-10-19 20:44:15) [POST]
+  Parameters: {"comment"=>{"name"=>"roc yu ", "url"=>"rojo.im", "content"=>"hello ", "email"=>"rociiu@mac.com"}, "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "id"=>"1-hello"}
+  [4;36;1mPost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+
+ActiveRecord::UnknownAttributeError (unknown attribute: name):
+  app/controllers/posts_controller.rb:15:in `new'
+  app/controllers/posts_controller.rb:15:in `comment'
+
+Rendered rescues/_trace (106.2ms)
+Rendered rescues/_request_and_response (23.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090220123422)
+Migrating to CreateComments (20090221133953)
+Migrating to CreateUsers (20090704145214)
+Migrating to CreateSessions (20090704145314)
+Migrating to CreateContacts (20090801151224)
+Migrating to CreateCategories (20090917090048)
+Migrating to AddCategoryToPosts (20090917091723)
+Migrating to AddEmailAndUrlToComments (20091019123022)
+Migrating to RenameCommentCustomer (20091019124612)
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mSHOW COLUMNS FROM `comments` LIKE 'customer'[0m
+  [4;36;1mSQL (113.6ms)[0m   [0;1mALTER TABLE `comments` CHANGE `customer` `name` varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091019124612')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `comments`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `comments`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `contacts`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `contacts`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#comment (for 127.0.0.1 at 2009-10-19 20:48:09) [POST]
+  Parameters: {"comment"=>{"name"=>"roc yu ", "url"=>"rojo.im", "content"=>"hello ", "email"=>"rociiu@mac.com"}, "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "id"=>"1-hello"}
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (1.9ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mComment Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`name`, `created_at`, `updated_at`, `post_id`, `url`, `content`, `email`) VALUES('roc yu ', '2009-10-19 12:48:09', '2009-10-19 12:48:09', NULL, 'rojo.im', 'hello ', 'rociiu@mac.com')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/posts/1-hello
+Completed in 21ms (DB: 6) | 302 Found [http://127.0.0.1/posts/1-hello/comment]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:48:10) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered shared/_tracker (0.1ms)
+Completed in 22ms (View: 10, DB: 2) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:48:46) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (1.8ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mComment Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (96.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` WHERE (`comments`.post_id = 1) [0m
+Rendered shared/_tracker (0.1ms)
+Completed in 124ms (View: 12, DB: 102) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#comment (for 127.0.0.1 at 2009-10-19 20:50:51) [POST]
+  Parameters: {"comment"=>{"name"=>"x", "url"=>"x", "post_id"=>"1", "content"=>"xx", "email"=>"rociiu@mac.com"}, "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "id"=>"1-hello"}
+  [4;35;1mPost Columns (45.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mComment Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`name`, `created_at`, `updated_at`, `post_id`, `url`, `content`, `email`) VALUES('x', '2009-10-19 12:50:51', '2009-10-19 12:50:51', 1, 'x', 'xx', 'rociiu@mac.com')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/posts/1-hello
+Completed in 62ms (DB: 48) | 302 Found [http://127.0.0.1/posts/1-hello/comment]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:50:52) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mComment Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` WHERE (`comments`.post_id = 1) [0m
+Rendered shared/_tracker (0.1ms)
+Completed in 93ms (View: 12, DB: 4) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:53:24) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;35;1mPost Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (1.7ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mComment Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+Rendered shared/_tracker (0.1ms)
+Completed in 30ms (View: 14, DB: 6) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:53:36) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.9ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mComment Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+Rendered shared/_tracker (0.1ms)
+Completed in 28ms (View: 13, DB: 6) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:54:35) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (1.7ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mComment Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+Rendered shared/_tracker (0.1ms)
+Completed in 29ms (View: 13, DB: 6) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:57:43) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (1.7ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mComment Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+Rendered shared/_tracker (0.1ms)
+Completed in 32ms (View: 16, DB: 6) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#comment (for 127.0.0.1 at 2009-10-19 20:57:47) [POST]
+  Parameters: {"comment"=>{"name"=>"", "url"=>"", "post_id"=>"1", "content"=>"", "email"=>""}, "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "id"=>"1-hello"}
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (1.6ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mComment Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Redirected to http://127.0.0.1:3000/posts/1-hello
+Completed in 24ms (DB: 6) | 302 Found [http://127.0.0.1/posts/1-hello/comment]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:57:47) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mComment Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+Rendered shared/_tracker (0.1ms)
+Completed in 23ms (View: 9, DB: 4) | 200 OK [http://127.0.0.1/posts/1-hello]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#comment (for 127.0.0.1 at 2009-10-19 20:57:51) [POST]
+  Parameters: {"comment"=>{"name"=>"", "url"=>"", "post_id"=>"1", "content"=>"", "email"=>""}, "authenticity_token"=>"u9/4ktnzL1ZIKnuczCgztkXLwxiac1dcpmyyPf2OCog=", "id"=>"1-hello"}
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (1.9ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;35;1mComment Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Redirected to http://127.0.0.1:3000/posts/1-hello
+Completed in 24ms (DB: 6) | 302 Found [http://127.0.0.1/posts/1-hello/comment]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-19 20:57:51) [GET]
+  Parameters: {"id"=>"1-hello"}
+  [4;36;1mPost Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mComment Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+Rendered shared/_tracker (0.1ms)
+Completed in 23ms (View: 9, DB: 4) | 200 OK [http://127.0.0.1/posts/1-hello]

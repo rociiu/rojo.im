@@ -1,0 +1,13 @@
+<% form_tag('/admin/login') do %>
+	<div class="clearfix">
+		<label>Login</label>
+		<%= text_field_tag :login %>
+	</div>
+	<div class="clearfix">
+		<label>Password</label>
+		<%= password_field_tag :password %>
+	</div>
+	<div class="clearfix">
+		<%= submit_tag 'Login' %>
+	</div>
+<% end %>

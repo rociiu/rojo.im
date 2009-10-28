@@ -1,0 +1,21 @@
+<div id="post">
+    <h2 class="title"><%= h post.title %> <a class="type" href="#">Entry</a></h2>
+    <div class="stuff">
+        <span class="time">07/02/2009</span>, <a href="#">rojo</a>
+    </div>
+    <div class="content">
+        <%= Textilizer.new(post.content).to_html %>
+    </div>
+
+    <div class="comments">
+        <h3>Comments</h3>
+        <%= render :partial => "comments/comment", :collection => post.comments %>
+    </div>
+
+    <div id="new_comment">
+        <h3>Leave Comment</h3>
+        <% form_for :comment, :url => post_comments_path(post) do |f| %>
+            <%= render :partial => "comments/form", :object => f %>
+        <% end %>
+    </div>
+</div>

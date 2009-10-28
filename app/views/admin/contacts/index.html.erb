@@ -1,0 +1,23 @@
+<div class="contacts">
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Created at</th>
+				<th colspan="2"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% for contact in @contacts %>
+				<tr>
+					<td><%= contact.id %></td>
+					<td><%= contact.name %></td>
+					<td><%= contact.created_at %></td>
+					<td><%= link_to 'edit', edit_admin_contact_path(contact) %></td>
+					<td><%= link_to 'destroy', admin_contact_path(contact), :method => :delete, :confirm => 'Are you sure?' %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

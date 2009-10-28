@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/rojo_v1/!svn/ver/1/db/migrate
+END
+20090221133953_create_comments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rojo_v1/!svn/ver/1/db/migrate/20090221133953_create_comments.rb
+END
+20091019124612_rename_comment_customer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/rojo_v1/!svn/ver/2/db/migrate/20091019124612_rename_comment_customer.rb
+END
+20090704145314_create_sessions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rojo_v1/!svn/ver/1/db/migrate/20090704145314_create_sessions.rb
+END
+20090917091723_add_category_to_posts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/rojo_v1/!svn/ver/1/db/migrate/20090917091723_add_category_to_posts.rb
+END
+20090801151224_create_contacts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rojo_v1/!svn/ver/1/db/migrate/20090801151224_create_contacts.rb
+END
+20090220123422_create_posts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rojo_v1/!svn/ver/1/db/migrate/20090220123422_create_posts.rb
+END
+20090917090048_create_categories.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/rojo_v1/!svn/ver/1/db/migrate/20090917090048_create_categories.rb
+END
+20091019123022_add_email_and_url_to_comments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/rojo_v1/!svn/ver/2/db/migrate/20091019123022_add_email_and_url_to_comments.rb
+END
+20090704145214_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rojo_v1/!svn/ver/1/db/migrate/20090704145214_create_users.rb
+END

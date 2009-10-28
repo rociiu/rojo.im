@@ -1,0 +1,257 @@
+/* basic html element style */
+body {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	/*font-family: Tahoma, times, serif; */
+	font-size: 100%;
+	background: url(../images/page_bg.png);
+}
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em;}
+h4 { font-size: 1.4em;}
+
+p {
+	line-height: 1.5em;
+}
+
+a {
+	color: #338db1;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+input[type=text] {
+	padding: 5px;
+}
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+/* errorExplanation */
+.errorExplanation {
+	border: 2px solid #ff5450;
+	font-size: 0.8em;
+	color: #333;
+	padding: 10px;
+	background: #ffae96;
+}
+.errorExplanation h2 {
+	font-size: 1.2em;
+}
+.errorExplanation ul {
+	margin-left: 10px;
+}
+
+/* home page */
+.wrapper {
+	margin: 0 auto;
+	width: 900px;
+}
+#home #card {
+	margin-top: 150px;
+	width: 860px;
+	height: 300px;
+	background: url(../images/card_bg.png) no-repeat center;
+	text-shadow: #eee 0 0 1px;
+}
+#home #card #logo {
+	float: left;
+	width: 350px;
+	height: 300px;
+	text-indent: -2000px;
+	background: url(../images/logo_big.png) no-repeat top;
+	margin-left: 30px;
+	margin-top: 45px;
+	display: inline-block;
+}
+#home #card #intro {
+	float: right;
+	width: 420px;
+}
+#home #card #intro #slogan {
+	margin: 45px 0 0 0;
+}
+#home #card #intro #slogan h2 {
+	font-weight: bold;
+	color: #666;
+}
+#home #card #intro #slogan p {
+	color: #777;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-family: Helvetica,sans-serif;
+	margin: 10px 15px 0 0;
+}
+#home #card #intro #contacts {
+	margin: 20px 0 0 0;
+}
+#home #card #intro #contacts a {
+	display: block;
+	float: left;
+	height: 35px;
+	margin: 0 15px 0 0;
+	text-decoration: none;
+}
+#home #card #intro #contacts a span {
+	display: block;
+	margin-top: 5px;
+}
+
+#blog {
+	margin-top: 20px;
+	width: 750px;
+	font-family: Tahoma, times, serif;
+}
+#blog #head a#logo , #blog #head a#blog_head {
+	width: 350px;
+	height: 220px;
+	display: block;
+	float: left;
+	text-indent: -2000px;
+	background: url(../images/logo_big.png) no-repeat top;
+}
+#blog #head a#blog_head {
+	margin-left: 50px;
+	background: url(../images/blog_head.png) no-repeat center;
+}
+#blog #nav, #blog #posts {
+	padding: 20px 20px;
+}
+#blog #nav, #blog #posts {
+	width: 650px;
+}
+#blog #nav ul li {
+	display: inline;
+	margin: 0 20px 0 0;
+}
+#blog #nav ul li a {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+#blog #nav ul li a:hover {
+	text-decoration: underline;
+}
+#blog #posts .post {
+	margin: 0 0 50px 0;
+}
+#blog #posts .post h2.title {
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+#blog #posts .post h2.title a {
+	color: #444;
+}
+#blog #posts .post .detail {
+	margin-left: 10px;
+}
+#blog #posts .post .detail div {
+	font-size: 0.9em;
+	float: left;
+	color: #666;
+	margin-right: 10px;
+}
+#blog #posts .post .post_content {
+	margin: 15px 0 0 0;
+	color: #333;
+}
+#blog #posts .post .post_content p {
+	line-height: 1.7em;
+	margin: 10px 0;
+}
+#blog #posts .post .post_content a.more {
+	display: block;
+	text-align: right;
+}
+#blog #posts .post .post_content p:first-letter {
+	font-size: 1.5em;
+	font-weight: bold;
+	float: left;
+}
+.field {
+	display: block;
+}
+.new_comment {
+	margin: 30px 0;
+	color: #333;
+}
+.new_comment h4 {
+	font-size: 1.1em;
+	color:#333;
+	border-bottom: 1px solid #eee;
+	margin: 20px 0 15px 0;
+	color: #999;
+	font-weight: normal;
+}
+.new_comment .field {
+	margin: 10px 0;
+}
+.new_comment .field input.text {
+	width: 200px;
+	padding: 5px;
+}
+.new_comment .field input.submit {
+	margin-left: 120px;
+}
+.new_comment .field label {
+	display: block;
+	float: left;
+	width: 120px;
+}
+.comments {
+	margin: 25px 0;
+	color: #444;
+}
+.comments h3 {
+	font-size: 1.2em;
+	border-bottom: 1px solid #ddd;
+	color: #999;
+	font-weight: normal;
+}
+.comments .comment {
+	margin: 15px 0 0 10px;
+	padding: 7px 0;
+	border-bottom: 1px solid #eee;
+}
+.comments .comment .commentor {
+	float: left;
+	width: 100px;
+}
+.comments .comment .comment_c {
+	float: left;
+	width: 500px;
+}
+#contact_form {
+	padding: 10px 20px;
+}
+#contact_form h3 {
+	margin: 10px 0;
+}
+#contact_form .field {
+	margin: 10px 0;
+}
+#contact_form .field input[type=text] {
+	width: 200px;
+}
+#contact_form .field label {
+	float: left;
+	display: inline-block;
+	width: 120px;
+}
+#contact_form .field input.submit {
+	margin-left: 120px;
+}

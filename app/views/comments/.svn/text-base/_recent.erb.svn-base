@@ -1,0 +1,5 @@
+<ul class="posts">
+    <% Comment.recent.each do |comment| %>
+        <li><%= link_to comment.content, post_path(comment.post) %></li>
+    <% end %>
+</ul>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/rojo_v1/!svn/ver/1/vendor/plugins/taobao
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/rojo_v1/!svn/ver/1/vendor/plugins/taobao/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/rojo_v1/!svn/ver/1/vendor/plugins/taobao/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/rojo_v1/!svn/ver/1/vendor/plugins/taobao/install.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rojo_v1/!svn/ver/1/vendor/plugins/taobao/MIT-LICENSE
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rojo_v1/!svn/ver/1/vendor/plugins/taobao/uninstall.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/rojo_v1/!svn/ver/1/vendor/plugins/taobao/README
+END

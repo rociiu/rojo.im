@@ -1,0 +1,16 @@
+<% if comment.content %>
+<div class="comment">
+	<div class="by">
+		<span class="name"><%= h(comment.commenter) %></span>
+		<span class="date"><%= comment.date %></span>
+	</div>
+	<div class="comment_content">
+		<%= Textilizer.new(h(comment.content || "&nbsp;&nbsp;&nbsp;")).to_html %>
+	</div>
+	<div class="links">
+		<% if current_user %>
+	      <%= link_to "Delete", post_comment_path(comment.post, comment), :method => :delete, :class => "system" %>
+	    <% end %>
+	</div>
+</div>
+<% end %>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/rojo_v1/!svn/ver/1/lib
+END
+authenticated_test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/rojo_v1/!svn/ver/1/lib/authenticated_test_helper.rb
+END
+textilizer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/rojo_v1/!svn/ver/1/lib/textilizer.rb
+END
+authenticated_system.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/rojo_v1/!svn/ver/1/lib/authenticated_system.rb
+END

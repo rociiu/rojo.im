@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<title> <%= @page_title || '' %>|| Rojo - web development team</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="description" content="rojo.im rails web development team freelance" />
+		<meta name="keywords" content="rails, ruby, web, development, freelance" />
+		<link rel="stylesheet" href="/stylesheets/reset.css" type="text/css" />
+		<link rel="stylesheet" href="/stylesheets/coderay.css" type="text/css" />
+		<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+	</head>
+	<body>
+		<div id="blog" class="wrapper">
+			<div id="head" class="clearfix">
+				<a id="logo" href="http://rojo.im">Rojo,web development</a>
+				<a id="blog_head">blog , web dev, design</a>
+			</div>
+			<div id="nav">
+				<ul>
+					<li><a href="http://rojo.im">Home</a></li>
+					<li><a href="http://rojo.im/blog">Blog</a></li>
+					<li><a href="http://rojo.im/contact">Contact</a></li>
+					<li><a href="http://rojo.im/projects">Projects</a></li>
+				</ul>
+			</div>
+			
+			<%= yield %>
+
+		</div>
+		<%= render '/shared/tracker' %>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+#posts {
+	margin: 0 auto;
+	width: 640px;
+}
+#posts .left_bar {
+	float: left;
+	width: 200px;
+	background: white;
+	height: 400px;
+	-webkit-box-shadow: 2px 2px 2px #ccc;
+	opacity: 0.6;
+}
+#posts .left_bar #about {
+	margin: 10px;
+	background: #f1f2f7;
+}
+#about p {
+	margin: 10px;
+	color: #292b2a;
+}
+h4 {
+	margin-bottom: 0;
+	font-size: 17px;
+	padding-left: 10px;
+}
+#posts .right_bar {
+	float: right;
+	width: 420px;
+	min-height: 500px;
+	margin-left: 20px;
+}
+#posts .post {
+	margin-bottom: 20px;
+	background: #fff;
+	position: relative;
+	padding-top: 40px;
+	height: 40px;
+	-webkit-box-shadow: 0px 2px 2px #ccc;
+}
+#posts .post div.title {
+	background: #3e3733;
+	position: absolute;
+	left: -10px;
+	top: 5px;
+	height: 23px;
+	width: 395px;
+	display: block;
+	color: #fff;
+	padding: 4px 15px;
+}
+#posts .post div.title a {
+	color: white;
+}
+#posts .post div.title a.type, #post .title a.type {
+	background: #a7dff7;
+	float: right;
+	color: #000;
+	text-decoration: none;
+	padding: 2px 3px;
+	font-size: 11px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#posts .post div.bottom {
+	color: #333;
+	margin: 10px;
+}
+#post {
+	min-height: 450px;
+	background: white;
+	-webkit-box-shadow: 0px 2px 2px #ccc;
+	position: relative;
+	padding: 30px 0;
+}
+#post h2.title {
+	font-size: 17px;
+	font-weight: normal;
+	position: absolute;
+	top: 5px;
+	left: -10px;
+	background: #3e3733;
+	color: white;
+	padding: 4px 10px;
+	width: 400px;
+}
+#post .content, #post .stuff {
+	margin: 20px 10px;
+	font: 13px;
+	line-height: 23px;
+}
+#post .stuff {
+	border-bottom: 1px solid #eee;
+	font-size: 0.9em;
+}
+/* comments style */
+.comments {
+	margin: 10px 15px;
+	font-size: 0.9em;
+}
+.comments h3 {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+/* comment form style */
+.comment {
+	margin: 10px 0;
+}
+.comment .comment_content {
+	margin: 7px 0 0 10px;
+	padding: 7px 10px;
+	border: 1px solid #eee;
+}
+.comment .comment_content p {
+	margin-bottom: 0;
+}
+#new_comment {
+	margin: 20px;
+}
+#new_comment h3 {
+	font-size: 1.1em;
+	margin-bottom: 10px;
+}

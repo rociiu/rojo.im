@@ -1,0 +1,21 @@
+<div id="posts">
+	<% for post in @posts %>
+	<div class="post">
+		<h2 class="title"><%= link_to post.title, post_path(post) %></h2>
+		<div class="detail clearfix">
+			<div class="date">
+				<span><%= post.date %></span>
+			</div>
+			<div class="categories">
+				
+			</div>
+		</div>
+		<div class="post_content">
+			<%= Textilizer.new(post.content).to_html %>
+			
+			<%= link_to 'More', post_path(post), :class => 'more' %>
+			
+		</div>
+	</div>
+	<% end %>
+</div>

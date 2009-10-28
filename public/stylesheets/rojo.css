@@ -1,0 +1,192 @@
+body {
+	font-family: Tahoma, times, serif;;
+	font-size: 100%;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2.5em;
+}
+h3 {
+	font-size: 2em;
+}
+h4 {
+	font-size: 1.5em;
+}
+p {
+	line-height: 1.5em;
+	margin: 1em 0;
+}
+#header {
+}
+#smile {
+	float: left;
+}
+#nav {
+	float: right;
+}
+#nav ul li {
+	display: inline;
+}
+#nav ul li a {
+	float: left;
+	display: block;
+	padding: 30px 5px 35px 5px;
+	color: #666;
+	font-weight: bold;
+	text-decoration: none;
+	width: 70px;
+	text-align: center;
+}
+#nav ul li a.active {
+	background: #e5e5e5;
+}
+#nav ul li a:hover {
+	padding: 30px 5px 30px 5px;
+	background: #f5f5f5;
+}
+#intro {
+	height: 450px;
+	position: relative;
+}
+#intro h2 {
+	position: absolute;
+	top: 220px;
+	left: 350px;
+	background: url(/images/rojo_studio.png) no-repeat center;
+	width: 418px;
+	height: 126px;
+	text-indent: -2000px;
+}
+#intro p {
+	position: absolute;
+	top: 80px;
+	left: 20px;
+	width: 279px;
+	height: 100px;
+	padding: 10px;
+	text-indent: -2000px;
+	background: url(/images/rect_bg.png) no-repeat center;
+}
+#sec_con {
+	padding: 10px 0;
+	background: #f6f6f6;
+	min-height: 300px;
+}
+#sec_con .section {
+	float: left;
+	width: 240px;
+	color: #666;
+	padding: 10px 0;
+}
+#sec_con .section span.title {
+	font-weight: bold;
+	font-size: 1.1em;
+	display: block;
+}
+#sec_con .section ul {
+	margin: 10px 0;
+}
+#sec_con .section ul li {
+	font-size: 0.9em;
+	padding: 7px 5px;
+}
+#sec_con .section ul li span {
+	border-bottom: 1px dashed #ccc;
+}
+#re_posts a {
+	color: #666;
+}
+
+#main_content {
+	min-height: 450px;
+	padding-top: 30px;
+}
+#main_content #posts {
+	margin: 40px 0;
+	color: #222;
+	width: 640px;
+	float: left;
+}
+#main_content .leftbar {
+	float: left;
+}
+#main_content #siderbar {
+	float: right;
+}
+#main_content #posts .post {
+	padding: 30px 0;
+	border-bottom: 1px solid #eee;
+}
+#main_content #posts .post h3.title {
+	margin: 15px 0;
+	font-size: 1.7em;
+}
+#main_content #posts .post h3.title a {
+	text-decoration: none;
+	color: #000;
+}
+#main_content #posts .post h3.title a:hover {
+	text-decoration: underline;
+}
+#main_content #posts .post div.timestamp {
+	margin: 10px 0;
+}
+#main_content #posts .post div.content {
+	margin: 15px 0;
+}
+#sidebar {
+	margin: 50px 5px;
+	float: right;
+}
+#footer {
+	background: #d4d4d4;
+	padding: 7px 0;
+	font-size: 0.8em;
+	color: #333;
+	min-height: 40px;
+}
+
+#contact_form h3 {
+	font-size: 1.5em;
+	margin: 20px 0;
+}
+
+#contact_form div.field {
+	margin: 10px 0;
+}
+#contact_form label {
+	float: left;
+	width: 120px;
+}
+#contact_form input.submit {
+	margin-left: 120px;
+}
+.flash {
+	padding: 7px;
+	font-size: 1em;
+	margin: 4px 0;
+}
+.notice {
+	background: #C8FFBF;
+	border-top: 1px solid #A2EF95;
+	border-bottom: 1px solid #A2EF95;
+}
+.error {
+	color: #AF4C4C;
+	background: #FFDFDF;
+	border-top: 1px solid #DF7D7D;
+	border-bottom: 1px solid #DF7D7D;
+}
+div.errorExplanation {
+	padding: 10px;
+	color: #AF4C4C;
+	background: #FFDFDF;
+	border-top: 1px solid #DF7D7D;
+	border-bottom: 1px solid #DF7D7D;
+	font-size: 0.8em;
+}
+div.errorExplanation h2 {
+	font-size: 1.1em;
+}

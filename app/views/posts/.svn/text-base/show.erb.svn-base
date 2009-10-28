@@ -1,0 +1,60 @@
+	<div id="posts">
+		<div class="post">
+			<h2 class="title"><%= link_to @post.title, post_path %></h2>
+			<div class="detail clearfix">
+				<div class="date">
+					<span>2009-10-10</span>
+				</div>
+				<div class="categories">
+					<label>Categories:</label>
+					<span>design,rojo,ruby</span>
+				</div>
+			</div>
+			<div class="post_content">
+				<%= Textilizer.new(@post.content).to_html %>
+			</div>
+			<div class="comments">
+				<h3><%= pluralize(@post.comments.count, 'comment') %></h3>
+				<ul>
+					<% for comment in @post.comments %>
+						<li>
+							<div class="comment clearfix">
+								<div class="commentor">
+									<%= comment.commentor_name %>
+								</div>
+								<div class="comment_c">
+									<p>
+										<%= comment.content %>
+									</p>
+								</div>
+							</div>
+						</li>
+					<% end %>
+				</ul>
+			</div>
+			<div class="new_comment">
+				<% form_tag(comment_post_path(@post)) do %>
+					<h4>Leave Your Comment:</h4>
+					<input type="hidden" name="comment[post_id]" value="<%= @post.id %>"></input>
+					<div class="field clearfix">
+						<label>Name:</label>
+						<input type="text" class="text" name="comment[name]"></input>
+					</div>
+					<div class="field clearfix">
+						<label>Website:</label>
+						<input type="text" class="text" name="comment[url]"></input>
+					</div>
+					<div class="field clearfix">
+						<label>Email:</label>
+						<input type="text" class="text" name="comment[email]"></input>
+					</div>
+					<div class="field clearfix">
+						<label class="comment_content">Content:</label>
+						<textarea cols="40" rows="7" class="text" name="comment[content]"></textarea>
+					</div>
+					<div class="field clearfix">
+						<input type="submit" value="Submit comment" class="submit"></input>
+					</div>
+				<% end %>
+			</div>
+		</div>

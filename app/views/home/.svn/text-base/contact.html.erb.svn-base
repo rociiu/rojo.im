@@ -1,0 +1,23 @@
+<% form_tag '/contact', :id => 'contact_form' do %>
+	<%= error_messages_for(:contact) %>
+	<h3>Contact Us</h3>
+	<div class="field clearfix">
+		<label>Name:</label>
+		<%= text_field_tag 'contact[name]' %>
+	</div>
+	<div class="field clearfix">
+		<label>Email:</label>
+		<%= text_field_tag 'contact[email]' %>
+	</div>
+	<div class="field clearfix">
+		<label>Website:</label>
+		<%= text_field_tag 'contact[url]' %>
+	</div>
+	<div class="field clearfix">
+		<label>Content:</label>
+		<%= text_area_tag 'contact[content]', nil, :cols => '50', :rows => '10' %>
+	</div>
+	<div class="field clearfix">
+		<%= submit_tag 'Submit', :class => 'submit' %>
+	</div>
+<% end %>

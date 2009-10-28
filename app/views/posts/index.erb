@@ -1,0 +1,19 @@
+<div id="posts">
+	<ul>
+		<% for post in @posts %>
+			<li>
+				<div class="post">
+					<h3 class="title"><%= link_to post.title, post_path(post) %></h3>
+					<div class="timestamp">
+						<span class="day"><%= post.created_at.strftime('%d') %></span>
+						<span class="month"><%= post.created_at.strftime('%B') %></span>
+						<span class="year"><%= post.created_at.strftime('%Y') %></span>
+					</div>
+					<div class="content">
+				        <%= Textilizer.new(post.content).to_html %>
+					</div>
+				</div>
+			</li>
+		<% end %>
+	</ul>
+</div>
